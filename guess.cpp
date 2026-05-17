@@ -5,13 +5,14 @@ int main(){
     cin>>a;
     int low ,high;
     cin>>low>>high;
-    int mid = (low+high)/2;
-    while (true){
+    
+    while (low<=high){
+        int mid = (low+high)/2;
         if (a< mid){
-            mid = mid-1;
+            high= mid-1;
         }
         else if(a>mid) {
-            mid=mid+1;
+            low=mid+1;
         }
         else {
             cout<<mid;
@@ -20,5 +21,14 @@ int main(){
        
 
     }
-
+    cout<< "Number not found";
 }
+
+
+
+
+
+
+    
+   
+
